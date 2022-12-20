@@ -1,25 +1,65 @@
+:root {
+  --primary-text-color: rgba(153, 153, 153, 1);
+  --secondary-text-color: rgba(50, 50, 50, 1);
+  --title-text-color: rgba(255, 255, 255, 1);
+  --accent: rgba(73, 133, 255, 1);
+  --decoration-color: rgba(0, 0, 0, 1);
+}
+
 body {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Header */
 
 .header {
-    background-color: red;
+  background-color: red;
 }
 
 .header-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--title-text-color);
 }
 
+/* section HERO */
+
+.hero {
+  background-color: darkred;
+}
+
+.hero-text {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+}
+
+.hero-title {
+  color: var(--title-text-color);
+  font-weight: 800;
+  font-size: 48px;
+  line-height: calc(68 / 48);
+  text-align: center;
+}
+
+.hero-btn {
+  background-color: var(--accent);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  border: none;
+}
