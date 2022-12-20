@@ -8,58 +8,153 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-}
-
-ul {
-  list-style: none;
+  font-weight: 500;
 }
 
 a {
   text-decoration: none;
 }
 
-/* Header */
+ul {
+  list-style: none;
+}
 
+.button {
+  background-color: var(--accent);
+  color: var(--title-text-color);
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+
+  border: none;
+  border-radius: 30px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(25 / 16);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(53 / 36);
+}
+
+/* Header section */
 .header {
-  background-color: red;
+  background-color: #212121;
+}
+
+.header-list {
+  list-style-type: none;
 }
 
 .header-link {
-  font-weight: 500;
+  color: var(--title-text-color);
+
   font-size: 16px;
   line-height: calc(20 / 16);
-  color: var(--title-text-color);
 }
 
-/* section HERO */
+.header-link {
+  text-decoration: none;
+}
 
+/* Section Hero */
 .hero {
-  background-color: darkred;
+  background-color: #212121;
 }
 
 .hero-text {
   color: var(--title-text-color);
-  font-weight: 500;
+
   font-size: 16px;
   line-height: calc(20 / 16);
 }
 
 .hero-title {
   color: var(--title-text-color);
+
   font-weight: 800;
   font-size: 48px;
   line-height: calc(68 / 48);
   text-align: center;
 }
 
-.hero-btn {
+/* .hero-btn {
   background-color: var(--accent);
   color: var(--title-text-color);
-  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-  border-radius: 30px;
   border: none;
+  border-radius: 30px;
+} */
+
+/* Services */
+
+.services {
+}
+
+.services-title {
+  color: var(--title-text-color);
+  text-align: center;
+}
+/* .services-list {
+ 
+}
+.services-item {
+} */
+.services-name {
+  color: var(--primary-text-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+}
+.services-text {
+  text-align: center;
+}
+
+/* Standarts */
+
+/* .standarts {
+    background-color: #212121;
+} */
+.standarts-title {
+  color: var(--title-text-color);
+}
+
+.standarts-text {
+  color: var(--secondary-text-color);
+}
+
+.standarts-link {
+  color: var(--accent);
+
+  font-size: 16px;
+  line-height: var(20 / 16);
+
+  text-decoration-line: underline;
+}
+
+/* .standarts-list {
+}
+.standarts-item {
+} */
+
+.tandarts-statistic {
+  color: var(--primary-text-color);
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(53 / 36);
+}
+
+.standarts-name {
+  color: var(--secondary-text-color);
 }
