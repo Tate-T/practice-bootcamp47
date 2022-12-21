@@ -11,12 +11,28 @@ body {
   font-weight: 500;
 }
 
+h1, h2, h3, p{
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
 
+
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  width: 1143px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: solid red;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -47,17 +63,36 @@ ul {
 /* Header section */
 .header {
   background-color: #212121;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.5);  
 }
 
-.header-list {
-  list-style-type: none;
+/* .header .container{
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+ */
+
+.header-list {
+   display: flex;
+   justify-content: flex-end;
+}
+
 
 .header-link {
   color: var(--title-text-color);
 
   font-size: 16px;
   line-height: calc(20 / 16);
+}
+
+.header-list > li{
+  margin-left: 40px;
+}
+
+.header-list li:first-child{
+  margin-left: 0;
 }
 
 .header-link {
