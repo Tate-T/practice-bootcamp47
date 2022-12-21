@@ -38,6 +38,7 @@ ul {
 .button {
   background-color: var(--accent);
   color: var(--title-text-color);
+  padding: 13px 36px 15px;
 
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -102,9 +103,13 @@ ul {
 /* Section Hero */
 .hero {
   background-color: #212121;
+  padding-top: 220px;
+  padding-bottom: 335px;
+  text-align: center;
 }
 
 .hero-text {
+  margin-bottom: 20px;
   color: var(--title-text-color);
 
   font-size: 16px;
@@ -112,8 +117,9 @@ ul {
 }
 
 .hero-title {
+  max-width: 829px;
   color: var(--title-text-color);
-
+  margin: 0 auto 50px;
   font-weight: 800;
   font-size: 48px;
   line-height: calc(68 / 48);
