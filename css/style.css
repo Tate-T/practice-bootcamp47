@@ -61,6 +61,11 @@ ul {
   line-height: calc(53 / 36);
 }
 
+.info {
+  margin: 0 auto;
+  max-width: 730px;
+}
+
 /* Header section */
 .header {
   background-color: #212121;
@@ -140,25 +145,48 @@ ul {
 /* Services */
 
 .services {
+  padding-top: 110px;
+  padding-bottom: 105px;
+  text-align: center;
+  outline: solid rgb(120, 72, 198);
 }
 
 .services-title {
-  color: var(--title-text-color);
+  max-width: 739px;
+  margin: 0 auto 32px;
+  color: var(--secondary-text-color);
   text-align: center;
 }
-/* .services-list {
- 
+.services-list {
+ display: flex;
+ margin-bottom: 55px;
 }
 .services-item {
-} */
+  width: 353px;
+  margin-left: 27px;
+  outline: solid green;
+}
+.services-item:first-child {
+  margin-left: 0;
+}
 .services-name {
-  color: var(--primary-text-color);
+  margin-bottom: 12px;
+  color: var(--decoration-color);
   font-weight: 600;
   font-size: 18px;
   line-height: calc(22 / 18);
 }
 .services-text {
   text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 70px;
+}
+.services-descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(22/14);
+
+
 }
 
 /* Standarts */
