@@ -289,7 +289,6 @@ ul {
 .works {
  padding-top: 100px;
  padding-bottom: 85px;
- background-color: yellowgreen;
 }
 
 .works-title {
@@ -356,10 +355,36 @@ ul {
   border: 1px solid #E0E0E0;
 }
 
+/*Projects*/
+.projects{
+ padding-top: 100px;
+ padding-bottom: 130px;
+}
 
+.projects-title{
+ text-align: center;
+ color: var(--decoration-color);
+ margin-bottom: 32px;
+}
 
+.projects-text{
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 70px;
+}
+.projects-item{
+  --items: 4;
+}
 
+.projects-button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.projects-list{
+  margin-bottom: 63px;
+}
 
 
 
