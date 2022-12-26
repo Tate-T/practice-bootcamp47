@@ -54,6 +54,9 @@ ul {
 
   border: none;
   border-radius: 30px;
+  transition:color 250ms cubic-bezier(0.165, 0.84, 0.44, 1),
+  outline 250ms cubic-bezier(0.165, 0.84, 0.44, 1),
+  background-color 250ms cubic-bezier(0.165, 0.84, 0.44, 1) ;
 }
 
 .button:hover, 
@@ -98,7 +101,11 @@ ul {
 
 /* Header section */
 .header {
-  background-color: #212121;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(33, 33, 33, 0.5);
   padding-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(161, 161, 161, 0.5);  
@@ -118,14 +125,25 @@ ul {
 
 .header-link {
   color: var(--title-text-color);
-
+position: relative;
   font-size: 16px;
   line-height: calc(20 / 16);
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
-.header-list > li{
+.header-link.active::after{
+  content: "";
+  position: absolute;
+  bottom: -39px;
+  left:0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color:var(--title-text-color);
+}
+/* .header-list > li{
   margin-left: 40px;
-}
+} */
 
 .header-list li:first-child{
   margin-left: 0;
@@ -188,6 +206,12 @@ ul {
   width: 40px;
   height: 40px;
   fill: var(--accent);
+  transition: fill 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.services-item:hover .services-icon,
+.services-item:focus .services-icon
+{
+  fill:var(--title-text-color)
 }
 .services-circle-out {
   width: 110px;
@@ -199,7 +223,14 @@ ul {
   align-items: center;
   flex-shrink: 0;
   margin-right: 17px;
+  transition: border-color 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
+
+.services-item:hover .services-circle-out,
+.services-item:focus .services-circle-out{
+border-color: var(--accent);
+}
+
 
 .services-circle-in {
   width: 90px;
@@ -209,7 +240,14 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.47, 0, 0.745, 0.715),border-color 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
+.services-item:hover .services-circle-in,
+.services-item:focus .services-circle-in{
+  border-color: var(--primary-text-color);
+  background-color: var(--accent);
+}
+
 
 .services-content {
   
@@ -225,7 +263,7 @@ ul {
 }
 
 .services-text {
-  margin-bottom: ;: 70px;
+  margin-bottom:70px;
 }
 
 .services-list {
@@ -238,6 +276,7 @@ ul {
   /* outline: solid green; */
   display: flex;
 }
+
 .services-item:first-child {
   margin-left: 0;
 }
