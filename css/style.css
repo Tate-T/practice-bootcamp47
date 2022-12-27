@@ -461,5 +461,42 @@ border-color: var(--accent);
   margin-bottom: 63px;
 }
 
+/* CSS MODAL*/
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.modal{
+  position: absolute;
+  background-color: white;
+  min-width: 450px;
+  min-height: 600px;
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-btn {
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px none;
+  background-color: transparent;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
