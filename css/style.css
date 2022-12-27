@@ -62,7 +62,7 @@ ul {
 .button:hover, 
 .button:focus {
   color: var(--accent);
-  outline: solid var(--accent);
+  /* outline: solid var(--accent); */
   background-color: transparent;
 }
 
@@ -264,6 +264,7 @@ border-color: var(--accent);
 
 .services-text {
   margin-bottom:70px;
+  color: var(--primary-text-color);
 }
 
 .services-list {
@@ -344,19 +345,32 @@ border-color: var(--accent);
 
 .standarts-item {
   width: 104px;
-  outline: solid salmon;
+  /* outline: solid salmon; */
 }
 
-.tandarts-statistic {
-  color: var(--primary-text-color);
+.standarts-box {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.standarts-icon{
+fill: var(--accent);
+
+}
+
+.standarts-statistic {
+  color: var(--secondary-text-color);
 
   font-weight: 400;
   font-size: 36px;
-  line-height: calc(53 / 36);
+  line-height: 1.47;
+  margin-left: 20px;
 }
 
 .standarts-name {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
+  margin-top: 17px;
 }
 
 /* Section WORKS */
@@ -364,6 +378,7 @@ border-color: var(--accent);
 .works {
  padding-top: 100px;
  padding-bottom: 85px;
+ background-image: linear-gradient(to bottom, #504DC2, #5F12D0 50%, #ffffff 50%) ;
 }
 
 .works-title {
@@ -434,6 +449,8 @@ border-color: var(--accent);
 .projects{
  padding-top: 100px;
  padding-bottom: 130px;
+ background-color: rgba(246, 246, 248, 1);
+ ;
 }
 
 .projects-title{
