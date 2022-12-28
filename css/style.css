@@ -478,6 +478,79 @@ fill: var(--accent);
   margin-bottom: 63px;
 }
 
+/* - feedback -- */
+
+
+
+.feedback .container {
+padding-top: 85px;
+text-align: center;
+padding-bottom: 85px;
+border-top: 1px solid #E0E0E0;
+
+
+}
+
+.feedback-title {
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: var(--decoration-color);
+  margin-bottom: 20px;
+}
+
+.feedback-text {
+color: rgba(153, 153, 153, 1);
+margin-bottom: 30px;
+}
+
+.feedback-form {
+  position: relative;
+  
+  
+
+}
+
+.feedback-input {
+  border: 1px solid #F2F2F2;
+box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+border-radius: 30px;
+width: 489px;
+height: 45px;
+display: block;
+padding: 15px 30px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.feedback-info {
+  font-weight: 400;
+font-size: 13px;
+line-height: 1.62;
+color:  rgba(153, 153, 153, 1);
+margin-top: 35px;
+}
+
+.feedback-button {
+  position: absolute;
+  top: 0;
+  left: 633px;
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+text-align: center;
+color: var(--title-text-color);
+background: #4985FF;
+box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+border-radius: 0px 30px 30px 0px;
+padding: 13px 36px 15px 26px;
+border: none;
+}
+
+
+
 /* CSS MODAL*/
 
 .backdrop {
