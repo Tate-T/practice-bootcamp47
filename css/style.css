@@ -493,7 +493,7 @@ ul {
   border-top: 1px solid #e0e0e0;
 }
 
-.feedback-title {
+.feedback__title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
@@ -502,16 +502,16 @@ ul {
   margin-bottom: 20px;
 }
 
-.feedback-text {
+.feedback__text {
   color: rgba(153, 153, 153, 1);
   margin-bottom: 30px;
 }
 
-.feedback-form {
+.feedback__form {
   position: relative;
 }
 
-.feedback-input {
+.feedback__input {
   border: 1px solid #f2f2f2;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
@@ -523,7 +523,7 @@ ul {
   margin-right: auto;
 }
 
-.feedback-info {
+.feedback__info {
   font-weight: 400;
   font-size: 13px;
   line-height: 1.62;
@@ -531,10 +531,12 @@ ul {
   margin-top: 35px;
 }
 
-.feedback-button {
+.feedback__button {
   position: absolute;
   top: 0;
   left: 633px;
+  width: 190px;
+  height: 45px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
