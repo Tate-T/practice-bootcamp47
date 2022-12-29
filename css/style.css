@@ -456,30 +456,33 @@ ul {
   background-color: rgba(246, 246, 248, 1);
 }
 
-.projects-title {
+.projects__title {
   text-align: center;
   color: var(--decoration-color);
   margin-bottom: 32px;
 }
 
-.projects-text {
+.projects__text {
   text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 70px;
 }
-.projects-item {
+
+.projects__list {
+  margin-bottom: 63px;
+}
+
+.projects__item {
   --items: 4;
 }
 
-.projects-button {
+.projects__button {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.projects-list {
-  margin-bottom: 63px;
-}
+
 
 /* - feedback -- */
 
