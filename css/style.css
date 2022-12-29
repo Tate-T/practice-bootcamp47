@@ -117,13 +117,13 @@ ul {
 }
  */
 
-.header-list {
+.header__list{
    display: flex;
    justify-content: flex-end;
 }
 
 
-.header-link {
+.header__link {
   color: var(--title-text-color);
 position: relative;
   font-size: 16px;
@@ -131,7 +131,7 @@ position: relative;
   padding-left: 20px;
   padding-right: 20px;
 }
-.header-link.active::after{
+.header__link.active::after{
   content: "";
   position: absolute;
   bottom: -39px;
@@ -145,13 +145,10 @@ position: relative;
   margin-left: 40px;
 } */
 
-.header-list li:first-child{
+.header__list li:first-child{
   margin-left: 0;
 }
 
-.header-link {
-  text-decoration: none;
-}
 
 /* Section Hero */
 .hero {
@@ -164,7 +161,7 @@ position: relative;
   margin: 0 auto;
 }
 
-.hero-text {
+.hero__text {
   margin-bottom: 20px;
   color: var(--title-text-color);
 
@@ -172,7 +169,7 @@ position: relative;
   line-height: calc(20 / 16);
 }
 
-.hero-title {
+.hero__title {
   max-width: 829px;
   color: var(--title-text-color);
   margin: 0 auto 50px;
