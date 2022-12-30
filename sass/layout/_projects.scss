@@ -1,0 +1,31 @@
+.projects {
+    padding-top: 100px;
+    padding-bottom: 130px;
+    background-color: rgba(246, 246, 248, 1);
+  }
+  
+  .projects__title {
+    text-align: center;
+    color: $decoration-color;
+    margin-bottom: 32px;
+  }
+  
+  .projects__text {
+    text-align: center;
+    color: $primary-text-color;
+    margin-bottom: 70px;
+  }
+  
+  .projects__list {
+    margin-bottom: 63px;
+  }
+  
+  .projects__item {
+    $items: 4;
+  }
+  
+  .projects__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
