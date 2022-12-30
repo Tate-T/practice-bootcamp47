@@ -91,3 +91,15 @@
   .services-list__descr {
     color: $primary-text-color;
   }
+
+  .services__btn {
+    @extend %button;
+  }
+
+  .services__btn:hover {
+    @extend %buttonhover;
+  }
+  
+  .services__btn:focus {
+    @extend %buttonfocus;
+  }

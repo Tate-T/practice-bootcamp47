@@ -30,3 +30,21 @@
   line-height: calc(68 / 48);
   text-align: center;
 }
+
+// .hero__btn {
+//   @extend .button;
+//   border: 1px solid red;
+// }
+
+.hero__btn {
+  @extend %button;
+}
+
+.hero__btn:hover {
+  @extend %buttonhover;
+}
+
+.hero__btn:focus {
+  @extend %buttonfocus;
+}
+

@@ -25,7 +25,16 @@
   }
   
   .projects__button {
+    @extend %button;
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .projects__button:hover {
+    @extend %buttonhover;
+  }
+  
+  .projects__button:focus {
+    @extend %buttonfocus;
   }

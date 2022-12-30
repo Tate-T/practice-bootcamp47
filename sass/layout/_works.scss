@@ -70,3 +70,15 @@
     /* background-color: #E0E0E0; */
     border: 1px solid #e0e0e0;
   }
+
+  .works__button {
+    @extend %button;
+  }
+
+  .works__button:hover {
+    @extend %buttonhover;
+  }
+  
+  .works__button:focus {
+    @extend %buttonfocus;
+  }
