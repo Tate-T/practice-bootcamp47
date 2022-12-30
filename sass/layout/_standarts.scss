@@ -1,0 +1,76 @@
+.standarts {
+    background-color: $background-color;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  
+  .standarts__info {
+    width: 489px;
+  }
+  
+  .standarts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    align-items: center;
+    padding-bottom: 90px;
+  }
+  
+  .standarts__title {
+    color: $decoration-color;
+    margin-bottom: 60px;
+  }
+  
+  .standarts__text {
+    color: $secondary-text-color;
+    margin-bottom: 42px;
+  }
+  
+  .standarts__link {
+    color: $accent;
+  
+    font-size: 16px;
+    line-height: 1.25;
+  
+    text-decoration-line: underline;
+  }
+  
+  .standarts__img {
+    width: 500px;
+    height: 400px;
+  }
+  
+  .statistics {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-evenly;
+  }
+  
+  .statistics__item {
+    width: 104px;
+  }
+  
+  .statistics__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .statistics__icon {
+    fill: $accent;
+  }
+  
+  .statistics__amount {
+    color: $secondary-text-color;
+  
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.47;
+    margin-left: 20px;
+  }
+  
+  .statistics__name {
+    color: $primary-text-color;
+    margin-top: 17px;
+  }
+  
