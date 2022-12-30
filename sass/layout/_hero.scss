@@ -1,0 +1,32 @@
+.hero {
+  background-color: #212121;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/hero.jpg);
+  padding-top: 220px;
+  padding-bottom: 335px;
+  text-align: center;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.hero__text {
+  margin-bottom: 20px;
+  color: $title-text-color;
+
+  font-size: 16px;
+  line-height: calc(20 / 16);
+}
+
+.hero__title {
+  max-width: 829px;
+  color: $title-text-color;
+  margin: 0 auto 50px;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: calc(68 / 48);
+  text-align: center;
+}
