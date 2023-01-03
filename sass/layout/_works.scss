@@ -52,8 +52,7 @@
   }
   
   .examples__text {
-    color: $primary-text-color;
-    margin-bottom: 47px;
+    @include content($content-mrg: 47px);
   }
   
   .examples__link {

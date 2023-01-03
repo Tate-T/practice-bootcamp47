@@ -1,7 +1,15 @@
-@mixin section-title($text-position, $title-color) {
+@mixin section-title($text-position: center, $title-color) {
     font-weight: 700;
     font-size: 36px;
-    line-height: 53px;
+    line-height: 1.47;
     text-align: $text-position;
     color: $title-color;
+}
+
+@mixin content($color-content: $primary-text-color, $content-mrg: 0) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $color-content;
+    margin-bottom: $content-mrg;
 }

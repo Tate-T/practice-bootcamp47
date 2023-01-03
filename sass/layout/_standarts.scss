@@ -22,8 +22,7 @@
   }
   
   .standarts__text {
-    color: $secondary-text-color;
-    margin-bottom: 42px;
+    @include content($color-content: $secondary-text-color, $content-mrg: 42px);
   }
   
   .standarts__link {
@@ -70,7 +69,7 @@
   }
   
   .statistics__name {
-    color: $primary-text-color;
+    @include content();
     margin-top: 17px;
   }
   

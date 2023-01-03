@@ -15,8 +15,7 @@
   }
   
   .feedback__text {
-    color: rgba(153, 153, 153, 1);
-    margin-bottom: 30px;
+    @include content($content-mrg: 30px);
   }
   
   .feedback__form {
