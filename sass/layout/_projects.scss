@@ -5,8 +5,7 @@
   }
   
   .projects__title {
-    text-align: center;
-    color: $decoration-color;
+    @include section-title($text-position: center, $title-color: $decoration-color);
     margin-bottom: 32px;
   }
   

@@ -17,7 +17,7 @@
   }
   
   .standarts__title {
-    color: $decoration-color;
+    @include section-title($text-position: left, $title-color: $decoration-color);
     margin-bottom: 60px;
   }
   

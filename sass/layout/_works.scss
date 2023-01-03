@@ -10,7 +10,7 @@
   }
   
   .works__title {
-    color: $title-text-color;
+    @include section-title($text-position: left, $title-color: $title-text-color);
     width: 540px;
   }
   

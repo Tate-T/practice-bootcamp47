@@ -5,10 +5,9 @@
   }
   
   .services__title {
+    @include section-title($text-position: center, $title-color: $secondary-text-color);
     max-width: 739px;
     margin: 0 auto 32px;
-    color: $secondary-text-color;
-    text-align: center;
   }
   
   .services__text {

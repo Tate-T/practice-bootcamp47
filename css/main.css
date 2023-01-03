@@ -99,12 +99,6 @@ body {
   line-height: 1.6;
 }
 
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.5;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -179,10 +173,13 @@ body {
 }
 
 .services__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  color: rgb(50, 50, 50);
   max-width: 739px;
   margin: 0 auto 32px;
-  color: rgb(50, 50, 50);
-  text-align: center;
 }
 
 .services__text {
@@ -288,6 +285,10 @@ body {
 }
 
 .standarts__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: left;
   color: rgb(0, 0, 0);
   margin-bottom: 60px;
 }
@@ -350,6 +351,10 @@ body {
 }
 
 .works__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: left;
   color: rgb(255, 255, 255);
   width: 540px;
 }
@@ -418,6 +423,9 @@ body {
 }
 
 .projects__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
   text-align: center;
   color: rgb(0, 0, 0);
   margin-bottom: 32px;
