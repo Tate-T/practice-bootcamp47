@@ -27,7 +27,10 @@
   .services-list {
     margin-bottom: 40px;
     margin-right: auto;
-    margin-left: a;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   
     @media screen and (min-width: $tablet) {
       @include grid();
@@ -40,7 +43,6 @@
   
   .services-list__item {
     max-width: 400px;
-    @include grid-item($gap: 10px);
     display: flex;
     
     @media screen and (min-width: $mobile) {
@@ -207,14 +209,6 @@
 
   .services__btn {
     @extend %button;
-
-    @media screen and (min-width: $tablet) {
-      
-    }
-  
-    @media screen and (min-width: $desktop) {
-      
-    }
   }
 
   .services__btn:hover {
