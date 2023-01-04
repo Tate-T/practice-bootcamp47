@@ -10,6 +10,7 @@
   padding-bottom: 335px;
   text-align: center;
   max-width: 1920px;
+  background-size: cover;
   margin: 0 auto;
 }
 
@@ -22,13 +23,27 @@
 }
 
 .hero__title {
-  max-width: 829px;
+  max-width: 300px;
   color: $title-text-color;
   margin: 0 auto 50px;
   font-weight: 800;
-  font-size: 48px;
-  line-height: calc(68 / 48);
+  font-size: 24px;
+  line-height: 1.42;
   text-align: center;
+
+  @media screen and (min-width: $mobile) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 42px;
+    max-width: 750px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 48px;
+    max-width: 829px;
+  }
 }
 
 // .hero__btn {
