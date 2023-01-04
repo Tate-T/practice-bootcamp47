@@ -1,25 +1,43 @@
 @mixin section-title($text-position: center, $title-color) {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 1.47;
     text-align: $text-position;
     color: $title-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 32px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+    }
 }
 
 @mixin content($color-content: $primary-text-color, $content-mrg: 0) {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.6;
     color: $color-content;
     margin-bottom: $content-mrg;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+    }
 }
 
 @mixin grid($gap: 30px) {
     display: flex;
     flex-wrap: wrap;
     margin-right: calc($gap * -1);
+    justify-content: center;
 }
-@mixin grid-item($items: 3, $gap: 30px) {
+
+@mixin grid-item($items: 3, $gap) {
     flex-basis: calc((100% / $items) - $gap);
     margin-right: $gap;
 }
