@@ -24,9 +24,11 @@
 .examples {
     margin-bottom: 85px;
     justify-content: space-between;
+    @include grid();
   }
   
   .examples__item {
+    @include grid-item();
     /* width: 350px; */
     /* margin-right: 30px; */
   }

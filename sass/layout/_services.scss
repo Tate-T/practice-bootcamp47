@@ -17,11 +17,12 @@
   .services-list {
     display: flex;
     margin-bottom: 55px;
+    @include grid();
   }
   
   .services-list__item {
+    @include grid-item($gap: 27px);
     width: 353px;
-    margin-left: 27px;
     display: flex;
   }
   

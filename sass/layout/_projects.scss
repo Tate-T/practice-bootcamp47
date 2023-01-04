@@ -16,10 +16,11 @@
   
   .projects__list {
     margin-bottom: 63px;
+    @include grid();
   }
   
   .projects__item {
-    $items: 4;
+    @include grid-item($items: 4);
   }
   
   .projects__button {

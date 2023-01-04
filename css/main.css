@@ -70,14 +70,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   /* gap: var(--gap); */
-  margin-right: -30px;
+  /*margin-right: calc($gap * -1);*/
   /* margin-bottom: calc(var(--gap) * -1); */
 }
 
 .grid__item {
-  flex-basis: calc(33.3333333333% - 30px);
-  margin-right: 30px;
-  /* margin-bottom: var(--gap); */
+  /*flex-basis: calc((100% / $items) - $gap);
+  margin-right: $gap;
+   margin-bottom: var(--gap); */
 }
 
 .container {
@@ -187,11 +187,15 @@ body {
 .services-list {
   display: flex;
   margin-bottom: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
 }
 
 .services-list__item {
+  flex-basis: calc(33.3333333333% - 27px);
+  margin-right: 27px;
   width: 353px;
-  margin-left: 27px;
   display: flex;
 }
 
@@ -377,9 +381,14 @@ body {
 .examples {
   margin-bottom: 85px;
   justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
 }
 
 .examples__item {
+  flex-basis: calc(33.3333333333% - 30px);
+  margin-right: 30px;
   /* width: 350px; */
   /* margin-right: 30px; */
 }
@@ -449,6 +458,14 @@ body {
 
 .projects__list {
   margin-bottom: 63px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+
+.projects__item {
+  flex-basis: calc(25% - 30px);
+  margin-right: 30px;
 }
 
 .projects__button {
