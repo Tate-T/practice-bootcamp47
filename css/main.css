@@ -198,13 +198,43 @@ body {
 
 .hero {
   background-color: #212121;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero.jpg);
-  padding-top: 220px;
-  padding-bottom: 335px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero_mobile@1x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 210px;
+  padding-bottom: 305px;
   text-align: center;
   max-width: 1920px;
   background-size: cover;
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../img/hero_mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero_tablet@1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero_tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1143px) {
+  .hero {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero_desktop@1x.jpg);
+    padding-top: 220px;
+    padding-bottom: 335px;
+  }
+}
+@media screen and (min-width: 1143px) and (min-device-pixel-ratio: 2), screen and (min-width: 1143px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1143px) and (min-resolution: 192dpi), screen and (min-width: 1143px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero_desktop@2x.jpg);
+  }
 }
 
 .hero__text {
