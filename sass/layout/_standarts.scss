@@ -1,75 +1,90 @@
 .standarts {
-    background-color: $background-color;
+  background-color: $background-color;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  @media screen and (min-width: $desktop) {
     padding-top: 100px;
     padding-bottom: 70px;
   }
-  
-  .standarts__info {
-    width: 489px;
-  }
-  
-  .standarts__wrapper {
+}
+
+.standarts__info {
+  max-width: 489px;
+}
+
+.standarts__wrapper {
+  align-items: center;
+  // padding-bottom: 60px;
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #e0e0e0;
-    align-items: center;
+  }
+  @media screen and (min-width: $desktop) {
     padding-bottom: 90px;
+    border-bottom: 1px solid #e0e0e0;
   }
-  
-  .standarts__title {
-    @include section-title($text-position: left, $title-color: $decoration-color);
-    margin-bottom: 60px;
+}
+
+.standarts__title {
+  @include section-title($text-position: left, $title-color: $decoration-color);
+  margin-bottom: 60px;
+}
+
+.standarts__text {
+  @include content($color-content: $secondary-text-color, $content-mrg: 42px);
+}
+
+.standarts__link {
+  color: $accent;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  text-decoration-line: underline;
+}
+
+.standarts__img {
+  max-width: 250px;
+  max-height: 200px;
+  @media screen and (min-width: $tablet) {
+    max-width: 500px;
+    max-height: 400px;
   }
-  
-  .standarts__text {
-    @include content($color-content: $secondary-text-color, $content-mrg: 42px);
-  }
-  
-  .standarts__link {
-    color: $accent;
-  
-    font-size: 16px;
-    line-height: 1.25;
-  
-    text-decoration-line: underline;
-  }
-  
-  .standarts__img {
-    width: 500px;
-    height: 400px;
-  }
-  
-  .statistics {
+}
+
+.statistics {
+  display: none;
+  @media screen and (min-width: $desktop) {
     display: flex;
     margin-top: 70px;
     justify-content: space-evenly;
   }
-  
-  .statistics__item {
-    width: 104px;
-  }
-  
-  .statistics__box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .statistics__icon {
-    fill: $accent;
-  }
-  
-  .statistics__amount {
-    color: $secondary-text-color;
-  
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.47;
-    margin-left: 20px;
-  }
-  
-  .statistics__name {
-    @include content();
-    margin-top: 17px;
-  }
-  
+}
+
+.statistics__item {
+  width: 104px;
+}
+
+.statistics__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statistics__icon {
+  fill: $accent;
+}
+
+.statistics__amount {
+  color: $secondary-text-color;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.47;
+  margin-left: 20px;
+}
+
+.statistics__name {
+  @include content();
+  margin-top: 17px;
+}
